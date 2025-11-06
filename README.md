@@ -145,24 +145,3 @@ python manage.py createsuperuser
 python manage.py collectstatic
 ```
 
-## Para GitHub
-
-Veja o arquivo `GUIA_GITHUB.md` para instruções completas de como subir o projeto no GitHub.
-
-O projeto está configurado para incluir:
-- ✅ Banco de dados (`db.sqlite3`) com todos os dados
-- ✅ Arquivos estáticos e imagens
-- ✅ Uploads (`media/`)
-
-## Desenvolvimento
-
-Este projeto foi desenvolvido como parte de uma avaliação prática, migrando um site estático para uma aplicação Django dinâmica com:
-- Geração dinâmica de páginas
-- Banco de dados via modelos Django
-- Gerenciamento via Django Admin
-- Controle de disponibilidade de jogos
-
-## Licença
-
-Este projeto é para fins educacionais.
-
