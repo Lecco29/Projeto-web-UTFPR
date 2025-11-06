@@ -1,0 +1,146 @@
+{
+  "categorias": [
+    {
+      "nome": "Jogos Clássicos",
+      "jogos": [
+        {
+          "nome": "Xadrez",
+          "tipo": "Estratégia Abstrata",
+          "jogadores": "2",
+          "tempo": "30-60 min",
+          "descricao": "O clássico jogo de estratégia que desafia a mente",
+          "detalhes": "Jogo milenar de estratégia pura. Cada peça tem movimentos únicos e o objetivo é dar xeque-mate no rei adversário.",
+          "imagem": "images/tab.jpg"
+        },
+        {
+          "nome": "Damas",
+          "tipo": "Estratégia Abstrata",
+          "jogadores": "2",
+          "tempo": "15-30 min",
+          "descricao": "Jogo tradicional de captura e movimento",
+          "detalhes": "Jogo clássico onde o objetivo é capturar todas as peças do adversário ou bloqueá-las.",
+          "imagem": "images/tab.jpg"
+        },
+        {
+          "nome": "Monopoly",
+          "tipo": "Estratégia/Economia",
+          "jogadores": "2-8",
+          "tempo": "60-180 min",
+          "descricao": "O clássico jogo de compra e venda de propriedades",
+          "detalhes": "Jogue dados, compre propriedades, construa casas e hotéis. O objetivo é fazer os outros jogadores falirem.",
+          "imagem": "images/tab.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Jogos Modernos",
+      "jogos": [
+        {
+          "nome": "Catan",
+          "tipo": "Estratégia/Construção",
+          "jogadores": "3-4",
+          "tempo": "60-90 min",
+          "descricao": "Construa sua civilização na ilha de Catan",
+          "detalhes": "Colete recursos, construa estradas e cidades. Negocie com outros jogadores para conseguir os recursos que precisa.",
+          "imagem": "images/tab.jpg"
+        },
+        {
+          "nome": "Ticket to Ride",
+          "tipo": "Estratégia/Construção",
+          "jogadores": "2-5",
+          "tempo": "30-60 min",
+          "descricao": "Construa rotas ferroviárias pelos Estados Unidos",
+          "detalhes": "Colete cartas de trem e construa rotas conectando cidades. Complete seus bilhetes de destino para ganhar pontos.",
+          "imagem": "images/tab.jpg"
+        },
+        {
+          "nome": "Wingspan",
+          "tipo": "Estratégia/Temático",
+          "jogadores": "1-5",
+          "tempo": "40-70 min",
+          "descricao": "Crie o habitat perfeito para pássaros",
+          "detalhes": "Jogo de engine building onde você atrai pássaros para seu habitat, cada um com habilidades únicas.",
+          "imagem": "images/tab.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Jogos de Partida Rápida",
+      "jogos": [
+        {
+          "nome": "Sushi Go!",
+          "tipo": "Drafting",
+          "jogadores": "2-5",
+          "tempo": "15 min",
+          "descricao": "Colete a melhor combinação de sushi",
+          "detalhes": "Jogo rápido de cartas onde você escolhe cartas para fazer a melhor combinação de sushi.",
+          "imagem": "images/tab.jpg"
+        },
+        {
+          "nome": "Love Letter",
+          "tipo": "Dedução",
+          "jogadores": "2-4",
+          "tempo": "20 min",
+          "descricao": "Ganhe o coração da princesa",
+          "detalhes": "Jogo de cartas simples onde você tenta entregar sua carta de amor à princesa antes dos outros.",
+          "imagem": "images/tab.jpg"
+        },
+        {
+          "nome": "Splendor",
+          "tipo": "Estratégia/Economia",
+          "jogadores": "2-4",
+          "tempo": "30 min",
+          "descricao": "Construa seu império de joias",
+          "detalhes": "Colete gemas para comprar desenvolvimentos e atrair nobres. O primeiro a 15 pontos vence.",
+          "imagem": "images/tab.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Jogos Cooperativos",
+      "jogos": [
+        {
+          "nome": "Pandemic",
+          "tipo": "Cooperativo",
+          "jogadores": "2-4",
+          "tempo": "45 min",
+          "descricao": "Salve o mundo de doenças mortais",
+          "detalhes": "Trabalhe em equipe para curar doenças e salvar a humanidade. Todos ganham ou todos perdem.",
+          "imagem": "images/tab.jpg"
+        },
+        {
+          "nome": "Forbidden Island",
+          "tipo": "Cooperativo/Aventura",
+          "jogadores": "2-4",
+          "tempo": "30 min",
+          "descricao": "Escape da ilha antes que ela afunde",
+          "detalhes": "Jogue como aventureiros tentando coletar tesouros e escapar de uma ilha que está afundando.",
+          "imagem": "images/tab.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Jogos de RPG",
+      "jogos": [
+        {
+          "nome": "Dungeons & Dragons",
+          "tipo": "RPG",
+          "jogadores": "3-6",
+          "tempo": "120+ min",
+          "descricao": "A aventura épica de fantasia",
+          "detalhes": "Crie personagens únicos e embarque em aventuras épicas em um mundo de fantasia. O Mestre narra a história.",
+          "imagem": "images/tab.jpg"
+        },
+        {
+          "nome": "Call of Cthulhu",
+          "tipo": "RPG/Horror",
+          "jogadores": "2-6",
+          "tempo": "120+ min",
+          "descricao": "Investigue mistérios sobrenaturais",
+          "detalhes": "Jogue como investigadores tentando desvendar mistérios sobrenaturais e sobreviver à loucura.",
+          "imagem": "images/tab.jpg"
+        }
+      ]
+    }
+  ]
+}

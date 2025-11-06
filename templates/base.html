@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Josiel Bar{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1><a href="{% url 'index' %}" style="color: #d4af37; text-decoration: none;">Josiel Bar</a></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="{% url 'index' %}">Início</a></li>
+                    <li><a href="{% url 'cardapio' %}">Cardápio</a></li>
+                    <li><a href="{% url 'jogos' %}">Jogos</a></li>
+                    <li><a href="{% url 'index' %}#sobre">Sobre</a></li>
+                    <li><a href="{% url 'index' %}#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Josiel Bar</h3>
+                    <p>O melhor bar de jogos da cidade!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>📍 Rua ype, 1314 - Parque universitario</p>
+                    <p>📞 (45) 993245-9234</p>
+                    <p>✉️ josielbar@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Segunda a Quinta: 17h - 04h</p>
+                    <p>Sexta e Sábado: 18h - 04h</p>
+                    <p>Domingo: 16h - 04h</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

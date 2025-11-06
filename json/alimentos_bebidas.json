@@ -1,0 +1,115 @@
+{
+  "categorias": [
+    {
+      "nome": "Entradas",
+      "itens": [
+        {
+          "nome": "Batata Frita",
+          "preco": "R$ 15,90",
+          "descricao": "Porção de batata frita crocante",
+          "ingredientes": "Batata, óleo, sal",
+          "imagem": "images/batatafrita.jpg"
+        },
+        {
+          "nome": "Calabresa Acebolada",
+          "preco": "R$ 19,90",
+          "descricao": "Linguiça calabresa fatiada com cebola refogada",
+          "ingredientes": "Linguiça calabresa, cebola, azeite",
+          "imagem": "images/Calabresa Acebolada.jpg"
+        },
+        {
+          "nome": "Torresmo",
+          "preco": "R$ 17,90",
+          "descricao": "Torresmo crocante e dourado",
+          "ingredientes": "Pele de porco, sal, temperos",
+          "imagem": "images/torresmo.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Pratos Principais",
+      "itens": [
+        {
+          "nome": "X-Salada",
+          "preco": "R$ 22,90",
+          "descricao": "Hambúrguer com queijo, alface, tomate e maionese",
+          "ingredientes": "Pão, carne bovina 150g, queijo, alface, tomate, maionese",
+          "imagem": "images/x-salada.jpg"
+        },
+        {
+          "nome": "Bauru",
+          "preco": "R$ 19,90",
+          "descricao": "Sanduíche clássico com presunto, queijo, tomate e maionese",
+          "ingredientes": "Pão francês, presunto, queijo, tomate, maionese",
+          "imagem": "images/bauru.jpg"
+        },
+        {
+          "nome": "Frango a Passarinho",
+          "preco": "R$ 26,90",
+          "descricao": "Frango frito em pedaços com alho e temperos",
+          "ingredientes": "Frango, alho, óleo, temperos",
+          "imagem": "images/frango-passarinho.jpg"
+        },
+        {
+          "nome": "Porção de Carne com Fritas",
+          "preco": "R$ 32,90",
+          "descricao": "Tiras de carne acebolada acompanhadas de batata frita",
+          "ingredientes": "Carne bovina, cebola, batata, óleo, temperos",
+          "imagem": "images/carne-frita.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Bebidas",
+      "itens": [
+        {
+          "nome": "Cerveja Long Neck",
+          "preco": "R$ 9,90",
+          "descricao": "Cerveja bem gelada",
+          "ingredientes": "Água, malte, lúpulo, levedura",
+          "imagem": "images/cerveja.jpg"
+        },
+        {
+          "nome": "Caipirinha",
+          "preco": "R$ 14,90",
+          "descricao": "Caipirinha de limão com cachaça",
+          "ingredientes": "Cachaça, limão, açúcar, gelo",
+          "imagem": "images/caipirinha.jpg"
+        },
+        {
+          "nome": "Refrigerante Lata",
+          "preco": "R$ 7,00",
+          "descricao": "Refrigerante gelado em lata",
+          "ingredientes": "Água gaseificada, açúcar, essências",
+          "imagem": "images/refrigerante.jpg"
+        },
+        {
+          "nome": "Suco Natural",
+          "preco": "R$ 8,90",
+          "descricao": "Suco fresco da fruta da estação",
+          "ingredientes": "Frutas frescas, água, açúcar (opcional)",
+          "imagem": "images/suco.jpg"
+        }
+      ]
+    },
+    {
+      "nome": "Sobremesas",
+      "itens": [
+        {
+          "nome": "Pudim de Leite",
+          "preco": "R$ 9,90",
+          "descricao": "Clássico pudim caseiro com calda de caramelo",
+          "ingredientes": "Leite condensado, leite, ovos, açúcar",
+          "imagem": "images/pudim.jpg"
+        },
+        {
+          "nome": "Sorvete de Creme",
+          "preco": "R$ 8,50",
+          "descricao": "Bola de sorvete de creme com calda opcional",
+          "ingredientes": "Leite, creme de leite, açúcar, baunilha",
+          "imagem": "images/sorvete.jpg"
+        }
+      ]
+    }
+  ]
+}

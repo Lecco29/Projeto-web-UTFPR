@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Cardápio - Josiel Bar{% endblock %}
+
+{% block content %}
+<div class="menu-container">
+    <div class="menu-header">
+        <h1>Cardápio de Comidas e Bebidas</h1>
+        <p>Deliciosas opções para acompanhar seus jogos favoritos</p>
+    </div>
+    
+    {% for categoria in categorias %}
+    <div class="menu-category">
+        <h2>{{ categoria.nome }}</h2>
+        <div class="menu-grid">
+            {% for item in categoria.itens_list %}
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    {% if item.imagem %}
+                        <img src="{{ item.imagem.url }}" alt="{{ item.nome }}">
+                    {% elif item.imagem_url %}
+                        {% if item.imagem_url|slice:":4" == "http" %}
+                            <img src="{{ item.imagem_url }}" alt="{{ item.nome }}">
+                        {% else %}
+                            <img src="{% static item.imagem_url %}" alt="{{ item.nome }}">
+                        {% endif %}
+                    {% else %}
+                        <div style="width: 100%; height: 100%; background: #f8f6f0; display: flex; align-items: center; justify-content: center; color: #666;">
+                            Sem imagem
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="menu-item-content">
+                    <h3>{{ item.nome }}</h3>
+                    <p class="menu-item-description">{{ item.descricao }}</p>
+                    <p class="menu-item-ingredients">{{ item.ingredientes }}</p>
+                    <p class="menu-item-price">{{ item.get_preco_formatado }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+

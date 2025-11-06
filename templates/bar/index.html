@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Josiel Bar{% endblock %}
+
+{% block content %}
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Josiel Bar</h2>
+        <div class="hero-buttons">
+            <a href="{% url 'cardapio' %}" class="btn-primary">Ver Cardápio</a>
+            <a href="{% url 'jogos' %}" class="btn-secondary">Nossos Jogos</a>
+        </div>
+    </div>
+</section>
+
+<section id="sobre" class="about">
+    <div class="container">
+        <h2>Sobre o Josiel Bar</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>No coração da cidade, o Josiel Bar é mais que um bar - é um refúgio para amantes de jogos de tabuleiro, RPG e diversão em grupo. Nossa missão é criar um ambiente acolhedor onde você pode desfrutar de deliciosas comidas e bebidas enquanto joga seus jogos favoritos.</p>
+                <p>Com uma biblioteca de mais de 200 jogos de tabuleiro, desde clássicos até os lançamentos mais recentes, temos algo para todos os gostos e idades. Nossa equipe está sempre pronta para ensinar novos jogos e garantir que sua experiência seja inesquecível.</p>
+            </div>
+            <div class="about-images">
+                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400&h=300&fit=crop" alt="Interior do bar" class="about-img">
+                <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop" alt="Mesas de jogos" class="about-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="highlights">
+    <div class="container">
+        <h2>O que nos torna especiais</h2>
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <h3>200+ Jogos</h3>
+                <p>Biblioteca diversificada de jogos para todas as idades</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Bebidas Artesanais</h3>
+                <p>Cervejas especiais e coquetéis únicos</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Comida Deliciosa</h3>
+                <p>Pratos pensados para jogadores</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
