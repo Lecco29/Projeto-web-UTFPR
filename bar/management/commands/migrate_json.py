@@ -1,6 +1,4 @@
-"""
-Comando Django para migrar dados dos arquivos JSON para o banco de dados
-"""
+
 import json
 import os
 from django.core.management.base import BaseCommand
@@ -15,7 +13,7 @@ class Command(BaseCommand):
         base_dir = settings.BASE_DIR
         json_dir = os.path.join(base_dir, 'json')
         
-        # Migrar alimentos e bebidas
+       
         alimentos_file = os.path.join(json_dir, 'alimentos_bebidas.json')
         if os.path.exists(alimentos_file):
             self.stdout.write('Migrando alimentos e bebidas...')
@@ -23,7 +21,7 @@ class Command(BaseCommand):
         else:
             self.stdout.write(self.style.WARNING(f'Arquivo não encontrado: {alimentos_file}'))
         
-        # Migrar jogos
+    
         jogos_file = os.path.join(json_dir, 'jogos.json')
         if os.path.exists(jogos_file):
             self.stdout.write('Migrando jogos...')
@@ -51,14 +49,14 @@ class Command(BaseCommand):
             self.stdout.write(f'  Categoria: {categoria.nome}')
             
             for item_data in cat_data.get('itens', []):
-                # Extrair preço do formato "R$ XX,XX"
+              
                 preco_str = item_data.get('preco', '0').replace('R$', '').replace(' ', '').replace(',', '.')
                 try:
                     preco = float(preco_str)
                 except ValueError:
                     preco = 0.0
                 
-                # Normalizar caminho da imagem
+          
                 imagem_path = item_data.get('imagem', '')
                 if imagem_path and not imagem_path.startswith('http'):
                     # Se for caminho relativo, usar como imagem_url

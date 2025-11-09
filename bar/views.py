@@ -3,17 +3,17 @@ from .models import CategoriaAlimento, CategoriaJogo, Jogo
 
 
 def index(request):
-    """Página inicial do site"""
+
     return render(request, 'bar/index.html')
 
 
 def cardapio(request):
-    """Página do cardápio de comidas e bebidas"""
+ 
     categorias = CategoriaAlimento.objects.filter(
         itens__ativo=True
     ).distinct().prefetch_related('itens').order_by('ordem', 'nome')
     
-    # Garantir que apenas itens ativos sejam exibidos
+    
     for categoria in categorias:
         categoria.itens_list = categoria.itens.filter(ativo=True)
     
@@ -24,12 +24,12 @@ def cardapio(request):
 
 
 def jogos(request):
-    """Página da biblioteca de jogos"""
+  
     categorias = CategoriaJogo.objects.filter(
         jogos__ativo=True
     ).distinct().prefetch_related('jogos').order_by('ordem', 'nome')
     
-    # Garantir que apenas jogos ativos sejam exibidos e adicionar info de disponibilidade
+  
     for categoria in categorias:
         jogos_list = []
         for jogo in categoria.jogos.filter(ativo=True):

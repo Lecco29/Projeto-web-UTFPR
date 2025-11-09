@@ -3,7 +3,7 @@ from django.core.validators import MinValueValidator
 
 
 class CategoriaAlimento(models.Model):
-    """Categoria de alimentos (Entradas, Pratos Principais, Bebidas, Sobremesas)"""
+  
     nome = models.CharField(max_length=100, unique=True)
     ordem = models.IntegerField(default=0, help_text="Ordem de exibição")
     
@@ -17,7 +17,7 @@ class CategoriaAlimento(models.Model):
 
 
 class ItemAlimento(models.Model):
-    """Item do cardápio (comida ou bebida)"""
+  
     categoria = models.ForeignKey(CategoriaAlimento, on_delete=models.CASCADE, related_name='itens')
     nome = models.CharField(max_length=200)
     descricao = models.TextField()
@@ -36,7 +36,7 @@ class ItemAlimento(models.Model):
         return f"{self.categoria.nome} - {self.nome}"
     
     def get_imagem_url(self):
-        """Retorna a URL da imagem (upload ou URL externa)"""
+      
         if self.imagem:
             return self.imagem.url
         elif self.imagem_url:
@@ -44,12 +44,12 @@ class ItemAlimento(models.Model):
         return None
     
     def get_preco_formatado(self):
-        """Retorna o preço formatado em reais"""
+  
         return f"R$ {self.preco:.2f}".replace('.', ',')
 
 
 class CategoriaJogo(models.Model):
-    """Categoria de jogos (Jogos Clássicos, Modernos, etc.)"""
+  
     nome = models.CharField(max_length=100, unique=True)
     ordem = models.IntegerField(default=0, help_text="Ordem de exibição")
     
@@ -63,7 +63,7 @@ class CategoriaJogo(models.Model):
 
 
 class Jogo(models.Model):
-    """Jogo de tabuleiro/RPG"""
+  
     categoria = models.ForeignKey(CategoriaJogo, on_delete=models.CASCADE, related_name='jogos')
     nome = models.CharField(max_length=200)
     descricao = models.TextField()
@@ -85,13 +85,13 @@ class Jogo(models.Model):
         return f"{self.categoria.nome} - {self.nome}"
     
     def get_jogadores_display(self):
-        """Retorna string formatada de jogadores"""
+    
         if self.jogadores_min == self.jogadores_max:
             return str(self.jogadores_min)
         return f"{self.jogadores_min}-{self.jogadores_max}"
     
     def get_imagem_url(self):
-        """Retorna a URL da imagem (upload ou URL externa)"""
+       
         if self.imagem:
             return self.imagem.url
         elif self.imagem_url:
@@ -108,7 +108,7 @@ class Jogo(models.Model):
 
 
 class CopiaJogo(models.Model):
-    """Cópia física de um jogo para controle de disponibilidade"""
+  
     jogo = models.ForeignKey(Jogo, on_delete=models.CASCADE, related_name='copias')
     codigo = models.CharField(max_length=50, unique=True, help_text="Código único da cópia")
     disponivel = models.BooleanField(default=True, help_text="Se a cópia está disponível para uso")
